@@ -4,7 +4,6 @@ import java.util.stream.Collectors;
 
 import com.example.moviecatalogservice.models.CatalogItem;
 import com.example.moviecatalogservice.models.Movie;
-import com.example.moviecatalogservice.models.Rating;
 import com.example.moviecatalogservice.models.UserRating;
 
 import org.springframework.beans.factory.annotation.Autowired;
