@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\movie-catalog-service",
+    "\\movie-catalog-service\\src",
+    "\\movie-catalog-service\\src\\main",
+    "\\movie-catalog-service\\src\\main\\java",
+    "\\movie-catalog-service\\src\\main\\java\\com",
+    "\\movie-catalog-service\\src\\main\\java\\com\\example",
+    "\\movie-catalog-service\\src\\main\\java\\com\\example\\moviecatalogservice"
+  ],
+  "SelectedNode": "\\movie-catalog-service\\src\\main\\java\\com\\example\\moviecatalogservice\\MovieCatalogServiceApplication.java",
+  "PreviewInSolutionExplorer": false
+}
