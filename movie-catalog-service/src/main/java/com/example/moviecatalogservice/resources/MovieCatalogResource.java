@@ -18,8 +18,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 @RequestMapping("/catalog")
 public class MovieCatalogResource {
 	
+    /*
 	@Autowired
 	private WebClient.Builder wBuilder; 
+    */
 
     @Autowired
 	private RestTemplate restTemplate; 
@@ -38,20 +40,21 @@ public class MovieCatalogResource {
 
 
         return ratings.stream().map(rating -> {
+            /*
             Movie movie = wBuilder.build()
                     .get()
                     .uri("http://localhost:8082/movies/"+rating.getMovieId())
                     .retrieve()
                     .bodyToMono(Movie.class)
                     .block();
-            
-                    /*
+            */
+                    
             Movie movie = restTemplate.getForObject(
                 //url, 
                 "http://localhost:8082/movies/"+rating.getMovieId(),
                 //responseType
                 Movie.class
-            );*/
+            );
             return new CatalogItem(movie.getName(), "test description", rating.getRating());
         })
             .collect(Collectors.toList());
