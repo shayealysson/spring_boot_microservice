@@ -29,7 +29,7 @@ public class MovieCatalogResource {
 
         //get all rated movie ID's
         UserRating ratings = restTemplate.getForObject(
-            "http://localhost:8083/ratingsData/users/"+userId, 
+            "http://ratings-data-service/ratingsData/users/"+userId, 
             UserRating.class
         );
 
@@ -45,7 +45,7 @@ public class MovieCatalogResource {
             */
             //for each movieId, call movie info service and get details       
             Movie movie = restTemplate.getForObject(
-                "http://localhost:8082/movies/"+rating.getMovieId(),
+                "http://movie-info-service/movies/"+rating.getMovieId(),
                 Movie.class
             );
             //put them all together
