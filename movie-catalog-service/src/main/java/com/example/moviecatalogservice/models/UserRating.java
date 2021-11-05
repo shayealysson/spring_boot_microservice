@@ -1,9 +1,12 @@
-package com.example.ratingsdataservice.models;
+package com.example.moviecatalogservice.models;
 
 import java.util.List;
 
 public class UserRating {
     private List<Rating> userRating;
+    
+    public UserRating() {
+    }
 
     public List<Rating> getUserRating() {
         return userRating;
