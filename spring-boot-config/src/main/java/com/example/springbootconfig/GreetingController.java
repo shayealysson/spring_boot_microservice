@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-    @Value("${my.greeting}")
+    @Value("${my.greeting1: Displaying defaul value, my.greeting1 does not exist in properties}")
     private String greetingMessage;
 
     @GetMapping("/greeting")
