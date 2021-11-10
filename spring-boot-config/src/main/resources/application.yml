@@ -1,4 +1,3 @@
-spring.profiles.active: test
 my:
   greeting: Hello Werld
   list.properties: One,Two,Three
@@ -10,5 +9,7 @@ db:
 #expose everything(http://localhost:8080/actuator/configprops)
 management.endpoints.web.exposure:
   include: "*"
+
+spring.cloud.config.uri: http://localhost:8888
 
 
