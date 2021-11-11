@@ -1,0 +1,16 @@
+my:
+  greeting: Hello Werld
+  list.properties: One,Two,Three
+db:
+  connection: "facebook.com 1"
+  port: 8086
+  host: host
+
+#expose everything(http://localhost:8080/actuator/configprops)
+management.endpoints.web.exposure:
+  include: "*"
+
+spring.cloud.config.uri: http://localhost:8888
+spring.application.name: spring-boot-config
+
+
